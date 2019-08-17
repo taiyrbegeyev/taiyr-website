@@ -1,11 +1,14 @@
 import styled from 'styled-components'
-import {Paper} from '@material-ui/core'
+import { Paper, Button } from '@material-ui/core'
 import { device } from 'config/device'
 
 export const AboutMeWrapper = styled(Paper)`
   &&& {
     width: 85vw;
     @media ${device.tablet} {
+      width: 60vw;
+    }
+    @media ${device.laptop} {
       width: 40vw;
     }
   }
@@ -44,6 +47,21 @@ export const AboutMeImage = styled.div`
   height: 70%;
   width: 100%;
   border-radius: 0.4rem;
+`
+
+export const AdditionalSection = styled.div`
+  height: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 2rem;
+`
+
+export const DownloadCVButton = styled(Button)`
+  &&& {
+    font-size: 1.3rem;
+    text-transform: none;
+  }
 `
 
 export const AboutMeInfoSection = styled.div`

@@ -1,8 +1,9 @@
 import React from 'react'
 import {
   AboutMeWrapper, AboutMePictureSection, AboutMePictureWrapper,
-  AboutMePicture, AboutMeImage, AboutMeInfoSection, AboutMeInfo,
-  AboutMeInfoName, AboutMeInfoNameSub, AboutMeInfoDescription
+  AboutMePicture, AboutMeImage, AdditionalSection, DownloadCVButton,
+  AboutMeInfoSection, AboutMeInfo, AboutMeInfoName, AboutMeInfoNameSub,
+  AboutMeInfoDescription
 } from './styles'
 import profilePic from 'assets/taiyr.png'
 import profileImg from 'assets/taiyrKid.jpg'
@@ -16,6 +17,11 @@ const AboutMeCard = () => {
           <AboutMePicture src={profilePic}/>
         </AboutMePictureWrapper>
         <AboutMeImage imageUrl={profileImg} />
+        <AdditionalSection>
+          <DownloadCVButton variant="contained" color="primary">
+            Download CV
+          </DownloadCVButton>
+        </AdditionalSection>
       </AboutMePictureSection>
       <AboutMeInfoSection>
         <AboutMeInfo>
