@@ -3,11 +3,32 @@ import Intro from 'containers/Intro'
 import AboutMe from 'containers/AboutMe'
 
 class App extends Component {
+  state = {
+    windowHeight: undefined,
+    windowWidth: undefined
+  }
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
+
+  handleResize = () => {
+    this.setState({
+      windowHeight: window.innerHeight,
+      windowWidth: window.innerWidth
+    })
+  }
+  
   render() {
     return(
       <React.Fragment>
-        <Intro />
-        <AboutMe />
+        <Intro windowHeight={this.state.windowHeight} windowWidth={this.state.windowWidth} />
+        <AboutMe windowHeight={this.state.windowHeight} windowWidth={this.state.windowWidth} />
       </React.Fragment>
     )
   }

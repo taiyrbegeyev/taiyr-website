@@ -7,30 +7,11 @@ import {
 import Typist from 'react-typist'
 
 class Intro extends Component {
-  state = {
-    windowHeight: undefined,
-    windowWidth: undefined
-  }
-
-  componentDidMount() {
-    this.handleResize();
-    window.addEventListener('resize', this.handleResize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize)
-  }
-
-  handleResize = () => {
-    this.setState({
-      windowHeight: window.innerHeight,
-      windowWidth: window.innerWidth
-    })
-  }
-  
   render() {
-    const imageUrl = this.state.windowWidth >= 768 ? desktopImage : mobileImage
-    const titleMargin = this.state.windowWidth >= 650 ? 9 : 40;
+    const { windowWidth } = this.props
+    
+    const imageUrl = windowWidth >= 768 ? desktopImage : mobileImage
+    const titleMargin = windowWidth >= 650 ? 9 : 40;
     
     return (
       <IntroContainer imageUrl={imageUrl}>

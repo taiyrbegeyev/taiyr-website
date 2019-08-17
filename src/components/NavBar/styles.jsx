@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import MenuIcon from '@material-ui/icons/Menu'
 import { device } from 'config/device'
 
 export const Header = styled.header`
@@ -54,11 +55,7 @@ export const UnorderedList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none;
-
-  @media ${device.tablet} {
-    display: flex;
-  }
+  display: flex;
 `
 
 export const ListItem = styled.li`
@@ -70,4 +67,18 @@ export const ToggleButtonItem = styled.div`
   @media ${device.tablet} {
     display: none;
   }
+`
+
+export const HamburgerIcon = styled(MenuIcon)`
+  &&& {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+  }
+`
+
+export const ListContainer = styled.div`
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
 `
