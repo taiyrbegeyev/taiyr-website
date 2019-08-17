@@ -1,31 +1,24 @@
 import React, { Component } from 'react'
 import SocialMedia from 'components/SocialMedia/SocialMedia'
 import NavBar from 'components/NavBar/NavBar'
-import { 
-  MainContainer, AboutMeWrapper,
-  AboutMeImage, AboutMePicture,
-  AboutMeInfo, AboutMeInfoSection,
-  AboutMePictureWrapper, AboutMePictureSection,
-  AboutMeInfoName, AboutMeInfoDescription
-} from './styles'
-import profilePic from 'assets/taiyr.png'
-import profileImg from 'assets/taiyrKid.jpg'
+import AboutMeCard from 'components/AboutMeCard'
+import { AboutMeContainer, MainContainer} from './styles'
 
 class AboutMe extends Component {
   render() {
     return(
-      <React.Fragment>
+      <AboutMeContainer>
         <NavBar/>
         <MainContainer>
           <SocialMedia />
-          <AboutMeWrapper>
+          <AboutMeCard />
+          {/* <AboutMeWrapper>
             <AboutMePictureSection>
               <AboutMePictureWrapper>
                 <AboutMePicture src={profilePic}/>
               </AboutMePictureWrapper>
               <AboutMeImage imageUrl={profileImg} />
             </AboutMePictureSection>
-  
             <AboutMeInfoSection>
               <AboutMeInfo>
                 <AboutMeInfoName>
@@ -36,9 +29,9 @@ class AboutMe extends Component {
                 </AboutMeInfoDescription>
               </AboutMeInfo>
             </AboutMeInfoSection>  
-          </AboutMeWrapper>
+          </AboutMeWrapper> */}
         </MainContainer>
-      </React.Fragment>
+      </AboutMeContainer>
     )
   }
 }

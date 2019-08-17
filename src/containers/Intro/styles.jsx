@@ -16,7 +16,7 @@ export const NameContainer = styled.div`
   margin-bottom: ${props => props.titleMargin}vh;
   color: white;
   text-align: center;
-  font-family: 'Open Sans', sans-serif !important; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 `
 
 export const Title = styled.div`

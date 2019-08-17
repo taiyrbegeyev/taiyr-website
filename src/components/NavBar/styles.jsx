@@ -2,11 +2,10 @@ import styled from 'styled-components'
 import { device } from 'config/device'
 
 export const Header = styled.header`
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   overflow: hidden;
-  font-family: 'Open Sans', sans-serif !important;
-  background-color: gray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 `
 
 export const Nav = styled.nav`

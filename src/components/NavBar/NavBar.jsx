@@ -10,7 +10,7 @@ const NavBar = () => {
   <Header>
     <Nav>
       <Logo>
-        <Anchor href="/">
+        <Anchor href="#aboutme">
           <DeveloperIcon src={developer} />
         </Anchor>
         <LogoName>Taiyr Begeyev</LogoName>
