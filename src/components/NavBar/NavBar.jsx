@@ -8,8 +8,16 @@ import {
   Drawer, IconButton, List,
   ListItem, ListItemIcon, ListItemText
 } from '@material-ui/core'
-import { AccountBalance } from '@material-ui/icons'
+import { School, Work, Code, ModeComment } from '@material-ui/icons'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import developer from 'assets/developer.png'
+
+const theme = createMuiTheme({
+  typography: {
+    // Account for base font-size of 62.5%.
+    htmlFontSize: 10,
+  },
+});
 
 class NavBar extends Component {
   state = {
@@ -35,7 +43,7 @@ class NavBar extends Component {
           </Logo>
           <NavBarItems>
             {
-              windowWidth < 768 ? 
+              windowWidth > 768 ? 
               <UnorderedList>
                 <ListItem>
                   <Anchor href="/">Education</Anchor>
@@ -57,16 +65,30 @@ class NavBar extends Component {
             }
           </NavBarItems>
         </Nav>
+        <MuiThemeProvider theme={theme}>
         <Drawer variant="temporary" anchor="bottom" open={this.state.drawerOpen} onClose={this.toggleDrawer}>
           <ListContainer role="presentation">
             <List>
               <ListItem button>
-                <ListItemIcon><AccountBalance /></ListItemIcon>
-                <ListItemText primary={'heye'} />
+                <ListItemIcon><School /></ListItemIcon>
+                <ListItemText primary={'Education'} />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon><Work /></ListItemIcon>
+                <ListItemText primary={'Experience'} />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon><Code /></ListItemIcon>
+                <ListItemText primary={'Projects'} />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon><ModeComment /></ListItemIcon>
+                <ListItemText primary={'Contact'} />
               </ListItem>
             </List>
           </ListContainer>
         </Drawer>
+        </MuiThemeProvider>
       </Header>
     )
   }
