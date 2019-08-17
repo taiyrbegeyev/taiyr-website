@@ -1,11 +1,9 @@
-import React from 'react';
-import { SocialContainer, SocialItemList, SocialItem, SocialLink } from './styles';
-import { socialMedia } from 'config/index';
-import FormattedIcon from 'icons/FormattedIcon';
+import React from 'react'
+import { SocialContainer, SocialItemList, SocialItem, SocialLink } from './styles'
+import { socialMedia } from 'config/index'
+import FormattedIcon from 'icons/FormattedIcon'
 
-const SocialMedia = (props) => {
-  //const { windowWidth } = props; 
-  
+const SocialMedia = () => {
   return (
     <SocialContainer>
       <SocialItemList>
@@ -24,7 +22,7 @@ const SocialMedia = (props) => {
         }
       </SocialItemList>
     </SocialContainer>
-  );
+  )
 }
 
 export default SocialMedia;

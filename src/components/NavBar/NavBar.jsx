@@ -1,24 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'
 import { 
   Header, Nav, Logo, NavBarItems, Anchor,
-  DeveloperIcon, UnorderedList, ListItem,
-  ToggleButtonItem, LogoName
-} from './styles';
-import developer from 'assets/developer.png';
+  DeveloperIcon, UnorderedList, ListItem, LogoName
+} from './styles'
+import developer from 'assets/developer.png'
 
-const NavBar = (props) => {
-  // eslint-disable-next-line
-  const [windowWidth, setWindowWidth ] = useState(window.innerWidth);
-
-  const handleWindowResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-      window.addEventListener('resize', handleWindowResize);
-      return () => window.removeEventListener('resize', handleWindowResize);
-  },[]);
-  
+const NavBar = () => {
   return (
   <Header>
     <Nav>
@@ -46,7 +33,7 @@ const NavBar = (props) => {
       </NavBarItems>
     </Nav>
   </Header>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

@@ -1,5 +1,6 @@
-import styled from 'styled-components';
-import {Paper} from '@material-ui/core';
+import styled from 'styled-components'
+import {Paper} from '@material-ui/core'
+import { device } from 'config/device'
 
 export const MainContainer = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ export const AboutMeWrapper = styled(Paper)`
   width: 80vw;
   background-color: gray;
   
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     width: 40vw;
   }
 `
@@ -41,7 +42,7 @@ export const AboutMePictureSection = styled.div`
   height: 25vh;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     height: 25rem
   }
 `
@@ -57,7 +58,7 @@ export const AboutMePicture = styled.img`
   border: 0.5rem solid white;
   width: 30%;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     width: 12.8rem;
   }
 `

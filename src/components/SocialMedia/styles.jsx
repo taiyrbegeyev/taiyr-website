@@ -1,18 +1,19 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { device } from 'config/device'
 
-const SocialContainer = styled.div`
+export const SocialContainer = styled.div`
   width: 50px;
   position: absolute;
   bottom: 0;
   left: 2rem;
   color: #a8b2d1;
   display: none;
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     display: inline;
   }
-`;
+`
 
-const SocialItemList = styled.ul`
+export const SocialItemList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +25,9 @@ const SocialItemList = styled.ul`
     margin: 0 auto;
     background-color: #a8b2d1;
   }
-`;
+`
 
-const SocialItem = styled.li`
+export const SocialItem = styled.li`
   &:last-of-type {
     margin-bottom: 20px;
   }
@@ -34,12 +35,10 @@ const SocialItem = styled.li`
   margin: 15px 10px;
 `;
 
-const SocialLink = styled.a`
+export const SocialLink = styled.a`
   outline: none;
   svg {
     width: 22px;
     height: 22px;
   }
-`;
-
-export { SocialContainer, SocialItemList, SocialItem, SocialLink };
+`
