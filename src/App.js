@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Intro from 'containers/Intro'
 import AboutMe from 'containers/AboutMe'
+import Experience from 'containers/Experience'
 
 class App extends Component {
   state = {
@@ -29,6 +30,7 @@ class App extends Component {
       <React.Fragment>
         <Intro windowHeight={this.state.windowHeight} windowWidth={this.state.windowWidth} />
         <AboutMe windowHeight={this.state.windowHeight} windowWidth={this.state.windowWidth} />
+        <Experience />
       </React.Fragment>
     )
   }
