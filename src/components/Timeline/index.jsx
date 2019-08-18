@@ -1,130 +1,63 @@
 import React, { Component } from 'react'
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react'
+import { Anchor } from './styles'
 
 class TimeLine extends Component {
   render() {
     return (
       <Timeline lineColor={'#ddd'}>
-  <TimelineItem
-    key="001"
-    dateText="11/2010 – Present"
-    style={{ color: '#e86971' }}
-  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="002"
-    dateText="04/2009 – 11/2010"
-    dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
-    bodyContainerStyle={{
-      background: '#ddd',
-      padding: '20px',
-      borderRadius: '8px',
-      boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
-    }}
-  >
-    <h3 style={{ color: '#61b8ff' }}>Title, Company</h3>
-    <h4 style={{ color: '#61b8ff' }}>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="003"
-    dateComponent={(
-      <div
-        style={{
-          display: 'block',
-          float: 'left',
-          padding: '10px',
-          background: 'rgb(150, 150, 150)',
-          color: '#fff',
-        }}
-      >
-        11/2008 – 04/2009
-      </div>
-    )}
-  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="004"
-    dateText="08/2008 – 11/2008"
-    dateInnerStyle={{ background: '#76bb7f' }}
-  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-</Timeline>
+        <TimelineItem
+          key="001"
+          dateText="09/2019 - 12/2019"
+          style={{ color: '#e86971' }}
+        >
+          <h3 style={{ color: '#e86971' }}>Teaching Assistant, Jacobs University Bremen</h3>
+          <h4>Programming in C and C++</h4>
+          <br/>
+          <ul>
+            <li>Coordinate instructional efforts with professor</li>
+            <li>Tutor students and assist with assignments and imperative and object-oriented programming concepts</li>
+            <li>Monitor students during class work and exams</li>
+            <li>Provide assistant to professor in terms of preparing lesson outlines</li>
+          </ul>
+        </TimelineItem>
+        <TimelineItem
+          key="002"
+          dateText="06/2019 – 09/2019"
+          dateInnerStyle={{ background: '#61b8ff' }}
+          style={{ color: '#61b8ff' }}
+        >
+          <h3 style={{ color: '#61b8ff' }}>Full-Stack Developer Intern, Medikura</h3>
+          <h4><Anchor target="_blank" href="https://www.medikura.com/en/">medikura.com</Anchor></h4>
+          <br/>
+          <ul>
+            <li>Develop the platform for reporting side effects of drugs</li>
+            <li>Create the platform for pharmaceutical companies in order to see all the reports their customers send</li>
+          </ul>
+        </TimelineItem>
+        <TimelineItem
+          key="003"
+          dateText="08/2008 – 11/2008"
+          dateInnerStyle={{ background: '#76bb7f' }}
+        >
+          <h3>Title, Company</h3>
+          <h4>Subtitle</h4>
+          <p>
+            Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+            exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+            nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+            reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+            est.
+          </p>
+          <p>
+            Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
+            exercitation. Veniam velit adipisicing anim excepteur nostrud magna
+            nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
+            reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
+            est.
+          </p>
+        </TimelineItem>
+      </Timeline>
     )
   }
 }

@@ -46,10 +46,10 @@ class NavBar extends Component {
               windowWidth > 768 ? 
               <UnorderedList>
                 <ListItem>
-                  <Anchor href="/">Education</Anchor>
+                  <Anchor href="/">Experience</Anchor>
                 </ListItem>
                 <ListItem>
-                  <Anchor href="/">Experience</Anchor>
+                  <Anchor href="/">Education</Anchor>
                 </ListItem>
                 <ListItem>
                   <Anchor href="/">Projects</Anchor>
@@ -70,12 +70,12 @@ class NavBar extends Component {
           <ListContainer role="presentation">
             <List>
               <ListItem button>
-                <ListItemIcon><School /></ListItemIcon>
-                <ListItemText primary={'Education'} />
-              </ListItem>
-              <ListItem button>
                 <ListItemIcon><Work /></ListItemIcon>
                 <ListItemText primary={'Experience'} />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon><School /></ListItemIcon>
+                <ListItemText primary={'Education and Skills'} />
               </ListItem>
               <ListItem button>
                 <ListItemIcon><Code /></ListItemIcon>
