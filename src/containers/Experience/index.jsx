@@ -5,7 +5,7 @@ import { ExperienceContainer } from './styles'
 class Experience extends Component {
   render() {
     return(
-      <ExperienceContainer>
+      <ExperienceContainer id='experience'>
         <Timeline />
       </ExperienceContainer>
     )

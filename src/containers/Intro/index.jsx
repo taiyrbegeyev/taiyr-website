@@ -11,10 +11,10 @@ class Intro extends Component {
     const { windowWidth } = this.props
     
     const imageUrl = windowWidth >= 768 ? desktopImage : mobileImage
-    const titleMargin = windowWidth >= 650 ? 9 : 40;
+    const titleMargin = windowWidth >= 768 ? 9 : 40;
     
     return (
-      <IntroContainer imageUrl={imageUrl}>
+      <IntroContainer imageUrl={imageUrl} id='intro'>
         <NameContainer titleMargin={titleMargin}>
           <Title>
             <Typist cursor={{show: false}} avgTypingDelay={140}>
@@ -27,7 +27,7 @@ class Intro extends Component {
             </Typist>
           </SubTitle>
         </NameContainer>
-        <ScrollDown />
+        <ScrollDown to='about-me' spy={true} smooth={true} />
       </IntroContainer>
     )
   }

@@ -9,7 +9,7 @@ class AboutMe extends Component {
     const { windowWidth } = this.props
 
     return(
-      <AboutMeContainer>
+      <AboutMeContainer id="about-me">
         <NavBar windowWidth={windowWidth} />
         <MainContainer>
           <SocialMedia />

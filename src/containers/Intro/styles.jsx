@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { Link } from "react-scroll"
 
 export const IntroContainer = styled.div`
   width: 100vw;
@@ -53,7 +54,7 @@ const scrolldown = keyframes`
   }
 `
 
-export const ScrollDown = styled.a`
+export const ScrollDown = styled(Link)`
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;

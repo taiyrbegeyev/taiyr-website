@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { scroller } from 'react-scroll'
+
 import { 
   Header, Nav, Logo, NavBarItems, Anchor,
   DeveloperIcon, UnorderedList, LogoName,
@@ -29,6 +31,15 @@ class NavBar extends Component {
       drawerOpen: !prevState.drawerOpen
     }))
   }
+
+  goTo = () => {
+    scroller.scrollTo('experience', {
+      duration: 1500,
+      delay: 100,
+      smooth: "easeInOutQuint"
+    })
+    this.toggleDrawer()
+  }
   
   render() {
     const { windowWidth } = this.props
@@ -36,26 +47,26 @@ class NavBar extends Component {
       <Header>
         <Nav>
           <Logo>
-            <Anchor href="#aboutme">
+            <Anchor to='intro' spy={true} smooth={true} >
               <DeveloperIcon src={developer} />
             </Anchor>
             <LogoName>Taiyr Begeyev</LogoName>
           </Logo>
           <NavBarItems>
             {
-              windowWidth > 768 ? 
+              windowWidth > 850 ? 
               <UnorderedList>
                 <ListItem>
-                  <Anchor href="/">Experience</Anchor>
+                  <Anchor to='experience' spy={true} smooth={true}>Experience</Anchor>
                 </ListItem>
                 <ListItem>
-                  <Anchor href="/">Education</Anchor>
+                  <Anchor to='education' spy={true} smooth={true}>Education</Anchor>
                 </ListItem>
                 <ListItem>
-                  <Anchor href="/">Projects</Anchor>
+                  <Anchor to='projects' spy={true} smooth={true}>Projects</Anchor>
                 </ListItem>
                 <ListItem>
-                  <Anchor href="/">Contact</Anchor>
+                  <Anchor to='contact' spy={true} smooth={true}>Contact</Anchor>
                 </ListItem>
               </UnorderedList>                         
               :
@@ -69,7 +80,7 @@ class NavBar extends Component {
         <Drawer variant="temporary" anchor="bottom" open={this.state.drawerOpen} onClose={this.toggleDrawer}>
           <ListContainer role="presentation">
             <List>
-              <ListItem button>
+              <ListItem button onClick={this.goTo}>
                 <ListItemIcon><Work /></ListItemIcon>
                 <ListItemText primary={'Experience'} />
               </ListItem>

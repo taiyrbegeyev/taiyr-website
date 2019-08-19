@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 import MenuIcon from '@material-ui/icons/Menu'
 import { device } from 'config/device'
 
@@ -38,7 +39,7 @@ export const NavBarItems = styled.div`
   flex: 1;
 `
 
-export const Anchor = styled.a`
+export const Anchor = styled(Link)`
   outline: none;
   text-decoration: none;
   color: #776f8f;
