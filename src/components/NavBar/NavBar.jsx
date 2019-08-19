@@ -32,8 +32,8 @@ class NavBar extends Component {
     }))
   }
 
-  goTo = () => {
-    scroller.scrollTo('experience', {
+  goTo = (containerId) => {
+    scroller.scrollTo(containerId, {
       duration: 1500,
       delay: 100,
       smooth: "easeInOutQuint"
@@ -80,7 +80,7 @@ class NavBar extends Component {
         <Drawer variant="temporary" anchor="bottom" open={this.state.drawerOpen} onClose={this.toggleDrawer}>
           <ListContainer role="presentation">
             <List>
-              <ListItem button onClick={this.goTo}>
+              <ListItem button onClick={() => this.goTo('experience')}>
                 <ListItemIcon><Work /></ListItemIcon>
                 <ListItemText primary={'Experience'} />
               </ListItem>
@@ -88,7 +88,7 @@ class NavBar extends Component {
                 <ListItemIcon><School /></ListItemIcon>
                 <ListItemText primary={'Education and Skills'} />
               </ListItem>
-              <ListItem button>
+              <ListItem button onClick={() => this.goTo('projects')}>
                 <ListItemIcon><Code /></ListItemIcon>
                 <ListItemText primary={'Projects'} />
               </ListItem>
