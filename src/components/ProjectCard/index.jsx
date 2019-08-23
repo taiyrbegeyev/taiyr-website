@@ -7,6 +7,7 @@ import {
 
 class ProjectCard extends Component {
   render() {
+    const { name, description } = this.props
     return (
       <Grid item xs={12} sm={6} md={4}>
         <Card>
@@ -17,18 +18,15 @@ class ProjectCard extends Component {
           />
           <CardContent style={{flexGrow: 1}}>
             <Typography gutterBottom variant="h5" component="h2">
-              Heading
+              {name}
             </Typography>
             <Typography>
-              This is a media card. You can use this section to describe the content.
+              {description}
             </Typography>
           </CardContent>
           <CardActions>
             <Button size="small" color="primary">
-              View
-            </Button>
-            <Button size="small" color="primary">
-              Edit
+              View Source Code
             </Button>
           </CardActions>
         </Card>
