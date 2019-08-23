@@ -7,7 +7,7 @@ import {
 } from './styles'
 import profilePic from 'assets/taiyr.png'
 import profileImg from 'assets/taiyrKid.jpg'
-import text from 'config/text'
+import { about_me } from 'config/text'
 
 const AboutMeCard = () => {
   return (
@@ -30,7 +30,7 @@ const AboutMeCard = () => {
             <AboutMeInfoNameSub href="mailto:taiyrbegeyev@gmail.com">taiyrbegeyev@gmail.com</AboutMeInfoNameSub>
           </AboutMeInfoName>
           <AboutMeInfoDescription>
-            <p>{text.about_me}</p>
+            <p>{about_me.about_me}</p>
           </AboutMeInfoDescription>
         </AboutMeInfo>
       </AboutMeInfoSection>
