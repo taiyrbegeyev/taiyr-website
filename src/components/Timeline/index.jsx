@@ -47,7 +47,7 @@ class TimeLine extends Component {
           style={{ color: '#76bb7f' }}
         >
           <h3 style={{ color: '#76bb7f' }}>{experience.method.title}</h3>
-          <h4>{experience.method.subtitle}</h4>
+          <h4><Anchor target="_blank" href={experience.method.subtitle}>pro.method.kz</Anchor></h4>
           <br />
           <ul>
             {

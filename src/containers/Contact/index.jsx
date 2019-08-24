@@ -25,7 +25,7 @@ class Contact extends Component {
           <ContactLinksContainer>
             {
               socialMedia.map(key =>
-                <ContactLinks url={key.url} />
+                <ContactLinks url={key.url} target="_blank"/>
               )
             }
           </ContactLinksContainer>
