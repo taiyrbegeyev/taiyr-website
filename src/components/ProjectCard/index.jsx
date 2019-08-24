@@ -7,13 +7,13 @@ import {
 
 class ProjectCard extends Component {
   render() {
-    const { name, description } = this.props
+    const { name, description, link, imageUrl } = this.props
     return (
       <Grid item xs={12} sm={6} md={4}>
         <Card>
           <CardMedia
             style={{paddingTop: '56.25%'}}
-            image='https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+            image={imageUrl}
             title="Image title"
           />
           <CardContent style={{flexGrow: 1}}>
@@ -25,7 +25,7 @@ class ProjectCard extends Component {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button size="small" color="primary" href={link} target="_blank">
               View Source Code
             </Button>
           </CardActions>

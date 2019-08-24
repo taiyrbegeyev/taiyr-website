@@ -9,5 +9,5 @@ export const ProjectsContainer = styled.div`
 
   display: flex;
   align-items: center;
-  margin-top: 10rem;
+  padding-top: 5rem;
 `

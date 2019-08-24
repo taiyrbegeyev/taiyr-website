@@ -4,6 +4,10 @@ import { Container, Grid } from '@material-ui/core'
 import { ProjectsContainer } from './styles'
 import ProjectCard from 'components/ProjectCard'
 import { projects } from 'config/text'
+import trump_bot from 'assets/trump_bot.jpg'
+import weather_app from 'assets/weather_app.png'
+import campus_life from 'assets/jstore.png'
+import browser_control from 'assets/browser_control.png'
 
 const theme = createMuiTheme({
   typography: {
@@ -23,21 +27,25 @@ class Projects extends Component {
                 name={projects.trump_bot.name}
                 description={projects.trump_bot.description}
                 link={projects.trump_bot.link}
+                imageUrl={trump_bot}
               />
               <ProjectCard
                 name={projects.weather_app.name}
                 description={projects.weather_app.description}
                 link={projects.weather_app.link}
+                imageUrl={weather_app}
               />
               <ProjectCard
                 name={projects.campus_life.name}
                 description={projects.campus_life.description}
                 link={projects.campus_life.link}
+                imageUrl={campus_life}
               />
               <ProjectCard
                 name={projects.browser_control.name}
                 description={projects.browser_control.description}
                 link={projects.browser_control.link}
+                imageUrl={browser_control}
               />
             </Grid>
           </Container>
