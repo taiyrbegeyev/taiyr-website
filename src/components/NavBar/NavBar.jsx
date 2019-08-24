@@ -84,7 +84,7 @@ class NavBar extends Component {
                 <ListItemIcon><Work /></ListItemIcon>
                 <ListItemText primary={'Experience'} />
               </ListItem>
-              <ListItem button>
+              <ListItem button onClick={() => this.goTo('education')}>
                 <ListItemIcon><School /></ListItemIcon>
                 <ListItemText primary={'Education and Skills'} />
               </ListItem>

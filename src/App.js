@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Intro from 'containers/Intro'
 import AboutMe from 'containers/AboutMe'
 import Experience from 'containers/Experience'
+import Education from 'containers/Education'
 import Projects from 'containers/Projects'
 
 class App extends Component {
@@ -32,6 +33,7 @@ class App extends Component {
         <Intro windowHeight={this.state.windowHeight} windowWidth={this.state.windowWidth} />
         <AboutMe windowHeight={this.state.windowHeight} windowWidth={this.state.windowWidth} />
         <Experience />
+        <Education />
         <Projects />
       </React.Fragment>
     )
