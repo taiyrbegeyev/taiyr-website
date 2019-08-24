@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { SocialIcon } from 'react-social-icons'
 
 export const ContactContainer = styled.div`
   min-height: 100vh;
@@ -27,4 +28,10 @@ export const ContactLinksContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`
+
+export const ContactLinks = styled(SocialIcon)`
+  &&& {
+    margin: 1rem;
+  }
 `

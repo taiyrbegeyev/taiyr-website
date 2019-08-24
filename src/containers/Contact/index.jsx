@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import {
   ContactContainer, ContactMe, ContactMeText,
-  ContactLinksContainer
+  ContactLinksContainer, ContactLinks
 } from './styles'
 import taiyrPro from 'assets/lined_paper.png'
+import { socialMedia } from 'config/index'
 
 const theme = createMuiTheme({
   typography: {
@@ -22,7 +23,11 @@ class Contact extends Component {
             <ContactMeText>I am here. I am always open for a good cup of coffee</ContactMeText>
           </ContactMe>
           <ContactLinksContainer>
-            
+            {
+              socialMedia.map(key =>
+                <ContactLinks url={key.url} />
+              )
+            }
           </ContactLinksContainer>
         </ContactContainer>
       </MuiThemeProvider>
