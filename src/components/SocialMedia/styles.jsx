@@ -3,9 +3,9 @@ import { device } from 'config/device'
 
 export const SocialContainer = styled.div`
   width: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 2rem;
+  left: 1.6rem;
   color: #a8b2d1;
   display: none;
   @media ${device.tablet} {

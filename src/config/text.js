@@ -1,5 +1,36 @@
 const about_me = {
-  about_me: 'Hi there! I am a second year Computer Science student at Jacobs University Bremen, Germany. Besides being a student, I am a full-stack developer. I make websites for people.'
+  about_me: 'Hallo! My name is Taiyr. I am a second year Computer Science student at Jacobs University Bremen, Germany. Besides being a student, I am also a full-stack developer with some pretty decent experience. I am passionate about building community, technology and making opportunities accessible for everyone!'
+}
+
+const experience = {
+  teaching_assistant: {
+    title: "Teaching Assistant, Jacobs University Bremen",
+    subtitle: "Programming in C and C++",
+    date: "09/2019 - 12/2019",
+    description: [
+      "Coordinate instructional efforts with professor",
+      "Tutor students and assist with assignments and imperative && object-oriented programming concepts",
+      "Monitor students during class work and exams",
+      "Provide assistant to professor in terms of preparing lesson outlines"
+    ]
+  },
+  medikura: {
+    title: "Full-Stack Developer Intern, Medikura",
+    subtitle: "https://www.medikura.com/en/",
+    date: "06/2019 – 09/2019",
+    description: [
+      "Develop the platform for reporting side effects of drugs",
+      "Create the platform for pharmaceutical companies in order to see all the reports their customers send"
+    ]
+  },
+  method: {
+    title: "Summer Internship Program | MethodPro, Almaty, KZ",
+    subtitle: "http://pro.method.kz/",
+    date: "06/2018 – 07/2018",
+    description: [
+      "Improved HTML, CSS and Javascript skills"
+    ]
+  }
 }
 
 const projects = {
@@ -26,5 +57,5 @@ const projects = {
 }
 
 export {
-  about_me, projects
+  about_me, experience, projects
 }
