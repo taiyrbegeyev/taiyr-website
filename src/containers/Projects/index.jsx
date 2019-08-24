@@ -28,24 +28,28 @@ class Projects extends Component {
                 description={projects.trump_bot.description}
                 link={projects.trump_bot.link}
                 imageUrl={trump_bot}
+                technologies={['Express.js', 'REST API']}
               />
               <ProjectCard
                 name={projects.weather_app.name}
                 description={projects.weather_app.description}
                 link={projects.weather_app.link}
                 imageUrl={weather_app}
+                technologies={['ReactJS', 'Bootstrap', 'REST API']}
               />
               <ProjectCard
                 name={projects.campus_life.name}
                 description={projects.campus_life.description}
                 link={projects.campus_life.link}
                 imageUrl={campus_life}
+                technologies={['Express.js', 'TypeScript', 'MySQL', 'REST API']}
               />
               <ProjectCard
                 name={projects.browser_control.name}
                 description={projects.browser_control.description}
                 link={projects.browser_control.link}
                 imageUrl={browser_control}
+                technologies={['C/C++', 'Python']}
               />
             </Grid>
           </Container>
