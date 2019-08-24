@@ -33,6 +33,75 @@ const experience = {
   }
 }
 
+const education = [
+  {
+    university: "Jacobs University Bremen",
+    location: "Bremen, Germany",
+    date: "09/2018 – Present",
+    major: "Computer Science",
+    courses: {
+      year_1: [
+        "Introduction to Computer Science",
+        "Algorithms and Data Structures",
+        "Programming in C",
+        "Objected Oriented programming in C++",
+        "Advanced Programming in Python",
+        "Calculus I",
+        "Calculus II",
+        "Linear Algebra I",
+        "Linear Algebra II",
+        "Introduction to Intelligent Mobile Systems",
+        "Introduction to Intelligent Mobile Systems Lab",
+        "Industrial Engineering",
+        "Industrial Engineering Lab",
+        "Introduction to Logistics",
+        "Ethics in Science and Technology",
+        "Fundamentals of International Business",
+        "German A1.1",
+        "German A1.2"
+      ],
+      year_2: [
+        "Operating Systems"
+      ]
+    }
+  }
+]
+
+const skills = [
+  {
+    type: 'ReactJS',
+    level: '90'
+  },
+  {
+    type: 'Javascript',
+    level: '80'
+  },
+  {
+    type: 'C/C++',
+    level: '90'
+  },
+  {
+    type: 'NodeJS (Express.js)',
+    level: '70'
+  },
+  {
+    type: 'Python',
+    level: '60'
+  },
+  {
+    type: 'HTML/CSS',
+    level: '90'
+  },
+  {
+    type: 'git',
+    level: '90'
+  },
+  {
+    type: 'mySQL',
+    level: '65'
+  }
+]
+
 const projects = {
   trump_bot: {
     name: "Trump Bot",
@@ -57,5 +126,5 @@ const projects = {
 }
 
 export {
-  about_me, experience, projects
+  about_me, experience, education, skills, projects
 }
