@@ -14,7 +14,7 @@ const theme = createMuiTheme({
     // Account for base font-size of 62.5%.
     htmlFontSize: 10,
   }
-});
+})
 
 class Projects extends Component {
   render() {

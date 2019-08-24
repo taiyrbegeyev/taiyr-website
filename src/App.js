@@ -4,6 +4,7 @@ import AboutMe from 'containers/AboutMe'
 import Experience from 'containers/Experience'
 import Education from 'containers/Education'
 import Projects from 'containers/Projects'
+import Contact from 'containers/Contact'
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
         <Experience />
         <Education />
         <Projects />
+        <Contact />
       </React.Fragment>
     )
   }
