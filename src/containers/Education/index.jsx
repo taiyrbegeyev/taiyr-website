@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { EducationContainer } from './styles'
+import { EducationContainer, SkillsContainer } from './styles'
 import Skills from 'components/SkillBar'
 
 class Education extends Component {
   render() {
     return (
       <EducationContainer id="education">
-        <div>
+        <SkillsContainer>
           <Skills />
-        </div>
+        </SkillsContainer>
       </EducationContainer>
     )
   }
