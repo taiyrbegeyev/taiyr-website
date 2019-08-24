@@ -4,7 +4,7 @@ import {
   CardContent, CardActions, Typography,
   Button
 } from '@material-ui/core'
-import { Badge } from './styles'
+import { BadgeContainer, Badge } from './styles'
 
 class ProjectCard extends Component {
   render() {
@@ -25,14 +25,17 @@ class ProjectCard extends Component {
               {description}
             </Typography>
             <Typography>
+              <BadgeContainer>
               {
                 technologies.map(key =>
                   <Badge
                     label={key}
                     color="secondary"
+                    size="small"
                   />
                 )
               }
+              </BadgeContainer>
             </Typography>
           </CardContent>
           <CardActions>
