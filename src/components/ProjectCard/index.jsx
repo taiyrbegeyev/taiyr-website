@@ -21,7 +21,7 @@ class ProjectCard extends Component {
             <Typography gutterBottom variant="h5" component="h2">
               {name}
             </Typography>
-            <Typography>
+            <Typography style={{fontSize: '14px'}}>
               {description}
             </Typography>
             <Typography>
