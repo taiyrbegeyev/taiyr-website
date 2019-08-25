@@ -9,4 +9,5 @@ export const ExperienceContainer = styled.div`
 
   display: flex;
   align-items: center;
+  padding: 5rem 0;
 `
