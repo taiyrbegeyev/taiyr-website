@@ -61,7 +61,20 @@ const education = [
         "German A1.2"
       ],
       year_2: [
-        "Operating Systems"
+        "Operating Systems",
+        "Computer Networks",
+        "Computer Architecture and Programming Languages",
+        "Formal Languages and Logic",
+        "Secure and Dependable Systems",
+        "Computability and Complexity",
+        "Machine Learning",
+        "Data Bases and Web Services",
+        "Software Engineering",
+        "Computer Graphics",
+        "Computer Vision",
+        "Elements of Probability",
+        "German A2.1",
+        "German A2.2"
       ]
     }
   }
