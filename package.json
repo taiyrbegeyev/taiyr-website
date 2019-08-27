@@ -1,7 +1,7 @@
 {
   "name": "taiyr-website",
   "version": "0.1.0",
-  "homepage": "https://taiyrbegeyev.github.io/taiyr-website",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.3.2",
