@@ -73,6 +73,7 @@ export const ScrollDown = styled(Link)`
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   transform: scale(1);
+  cursor: pointer;
 
   &:before {
     position: absolute;

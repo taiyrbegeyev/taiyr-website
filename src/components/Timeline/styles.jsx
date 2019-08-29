@@ -5,3 +5,7 @@ export const Anchor = styled.a`
   cursor: pointer;
   color: #333;
 `
+
+export const ListItem = styled.li`
+  margin-bottom: 0.5rem;
+`

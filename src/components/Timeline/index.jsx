@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react'
-import { Anchor } from './styles'
+import { Anchor, ListItem } from './styles'
 import { experience } from 'config/text'
 
 class TimeLine extends Component {
@@ -18,7 +18,7 @@ class TimeLine extends Component {
           <ul>
             {
               experience.teaching_assistant.description.map(key =>
-                <li>{key}</li>  
+                <ListItem>{key}</ListItem>  
               )
             }
           </ul>
@@ -35,7 +35,7 @@ class TimeLine extends Component {
           <ul>
             {
               experience.medikura.description.map(key =>
-                <li>{key}</li>  
+                <ListItem>{key}</ListItem>  
               )
             }
           </ul>
@@ -52,7 +52,7 @@ class TimeLine extends Component {
           <ul>
             {
               experience.method.description.map(key =>
-                <li>{key}</li>  
+                <ListItem>{key}</ListItem>  
               )
             }
           </ul>
