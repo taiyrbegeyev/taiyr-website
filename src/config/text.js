@@ -9,7 +9,7 @@ const experience = {
     date: "09/2019 - 12/2019",
     description: [
       "Coordinate instructional efforts with professor",
-      "Tutor students and assist with assignments and imperative && object-oriented programming concepts",
+      "Tutor students and assist with assignments, imperative and object-oriented programming concepts",
       "Monitor students during class work and exams",
       "Provide assistant to professor in terms of preparing lesson outlines"
     ]
@@ -19,8 +19,15 @@ const experience = {
     subtitle: "https://www.medikura.com/en/",
     date: "06/2019 – 09/2019",
     description: [
-      "Develop the platform for reporting side effects of drugs",
-      "Create the platform for pharmaceutical companies in order to see all the reports their customers send"
+      "Medikura develops the digital infrastructure for modern drug safety by enabling real-time reporting of side-effects which connects patient, doctors, pharmacists, pharma companies and authorities on an easy-to-use real-time platform.",
+      "Built React.JS/Redux app to add account management and enable pharma companies to exchange structured messages with patients",
+      "Worked on Node.JS microservice to aggregate and filter information from an external API",
+      "Turned Figma mockups into user interfaces using React.JS, Styled Components and Material-UI",
+      "Standardized and improve code style and structure across several React.JS projects",
+      "Worked on Node.JS app with handlebars templates to generate and download PDFs from HTML and CSS",
+      "Learned and applied clean coding software engineering principles through code reviews and pair programming",
+      "Reviewed code of other developers",
+      "Learned Agile principles by working in fast-paced scrum team"
     ]
   },
   method: {
@@ -28,7 +35,8 @@ const experience = {
     subtitle: "http://pro.method.kz/",
     date: "06/2018 – 07/2018",
     description: [
-      "Improved HTML, CSS and Javascript skills"
+      "Studied HTML, CSS, JavaScript and Python over the course of 8 weeks",
+      "Worked on business cases from several Kazakhstani companies"
     ]
   }
 }
