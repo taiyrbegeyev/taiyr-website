@@ -8,6 +8,7 @@ import {
 import profilePic from 'assets/taiyr.png'
 import profileImg from 'assets/taiyrKid.jpg'
 import { about_me } from 'config/text'
+import cv from 'assets/Taiyr_Begeyev_CV_EU.pdf'
 
 const AboutMeCard = () => {
   return (
@@ -18,7 +19,7 @@ const AboutMeCard = () => {
         </AboutMePictureWrapper>
         <AboutMeImage imageUrl={profileImg} />
         <AdditionalSection>
-          <DownloadCVButton variant="contained" color="primary">
+          <DownloadCVButton variant="contained" color="primary" href={cv} target="_blank">
             Download CV
           </DownloadCVButton>
         </AdditionalSection>
