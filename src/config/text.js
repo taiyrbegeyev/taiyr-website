@@ -9,7 +9,7 @@ const experience = {
     date: "09/2019 - 12/2019",
     description: [
       "Coordinate instructional efforts with professor",
-      "Tutor students and assist with assignments, imperative and object-oriented programming concepts",
+      "Tutor 170 students and assist with assignments, imperative and object-oriented programming concepts",
       "Monitor students during class work and exams",
       "Provide assistant to professor in terms of preparing lesson outlines"
     ]
