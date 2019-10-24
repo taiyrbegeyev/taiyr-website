@@ -9,7 +9,7 @@ const experience = {
     date: "09/2019 - 12/2019",
     description: [
       "Coordinate instructional efforts with professor",
-      "Tutor 170 students and assist with assignments, imperative and object-oriented programming concepts",
+      "Tutor 180 students and assist with assignments, imperative and object-oriented programming concepts",
       "Monitor students during class work and exams",
       "Provide assistant to professor in terms of preparing lesson outlines"
     ]
@@ -79,7 +79,6 @@ const education = [
         "Data Bases and Web Services",
         "Software Engineering",
         "Computer Graphics",
-        "Computer Vision",
         "Elements of Probability",
         "German A2.1",
         "German A2.2"
@@ -118,12 +117,21 @@ const skills = [
     level: '90'
   },
   {
+    type: 'Firebase',
+    level: '80'
+  },
+  {
     type: 'mySQL',
     level: '65'
   }
 ]
 
 const projects = {
+  jstore: {
+    name: "JStore",
+    description: "Marketplace for Jacobs University Bremen, which is used by more than 200 students. 67 items have been successfully sold. The app offers passwordless authentication to improve security. It takes less than 5 seconds to contact the owner. Our own templates simplify life. Post and edit your own posts, mark as sold or delete them. Search/sort items by keywords or categories. jstore.xyz",
+    link: "https://github.com/taiyrbegeyev/JStore"
+  },
   trump_bot: {
     name: "Trump Bot",
     description: "Telegram Bot that can search for the dumbest things Donald Trump has ever said by keyword. If you want some diversity, random quote and meme options are available.",
@@ -136,7 +144,7 @@ const projects = {
   },
   campus_life: {
     name: "Campus Life",
-    description: "Work on the front-end and back-end of the unified Campus Website : Campus Store, Campus Life and Campus People.",
+    description: "Work on the front-end and back-end of the unified Campus Website : Campus Life and Campus People.",
     link: "https://www.github.com/techclubjacobs/"
   },
   browser_control: {

@@ -8,6 +8,7 @@ import trump_bot from 'assets/trump_bot.jpg'
 import weather_app from 'assets/weather_app.png'
 import campus_life from 'assets/jstore.png'
 import browser_control from 'assets/browser_control.png'
+import jstore from 'assets/jstore_.png'
 
 const theme = createMuiTheme({
   typography: {
@@ -23,6 +24,13 @@ class Projects extends Component {
         <ProjectsContainer id="projects">
           <Container maxWidth="md">
             <Grid container spacing={4}>
+              <ProjectCard
+                name={projects.jstore.name}
+                description={projects.jstore.description}
+                link={projects.jstore.link}
+                imageUrl={jstore}
+                technologies={['ReactJS', 'Javascript', 'Firebase']}
+              />
               <ProjectCard
                 name={projects.trump_bot.name}
                 description={projects.trump_bot.description}
