@@ -3,19 +3,28 @@ const about_me = {
 }
 
 const experience = {
+  medikura_working_student: {
+    title: "Full Stack Developer (Working Student), remote job",
+    subtitle: "https://www.medikura.com/en/",
+    date: "12/2019 - Present",
+    description: [
+      "Develop automatic end-to-end test suites / ecosystems for all platform services to proof the readiness for release",
+      "Identify and remove manual testing effort in all areas of the platform"
+    ]
+  },
   teaching_assistant: {
     title: "Teaching Assistant, Jacobs University Bremen",
     subtitle: "Programming in C and C++",
     date: "09/2019 - 12/2019",
     description: [
-      "Coordinate instructional efforts with professor",
-      "Tutor 180 students and assist with assignments, imperative and object-oriented programming concepts",
-      "Monitor students during class work and exams",
-      "Provide assistant to professor in terms of preparing lesson outlines"
+      "Coordinated instructional efforts with professor",
+      "Tutored 180 students and assist with assignments, imperative and object-oriented programming concepts",
+      "Monitored students during class work and exams",
+      "Provided assistance to professor in terms of preparing lesson outlines"
     ]
   },
   medikura: {
-    title: "Full-Stack Developer Intern, Medikura",
+    title: "Frontend Web Developer Intern, Medikura",
     subtitle: "https://www.medikura.com/en/",
     date: "06/2019 – 09/2019",
     description: [
